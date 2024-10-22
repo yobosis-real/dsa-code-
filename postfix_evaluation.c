@@ -17,6 +17,8 @@ double compute(char symbol, double op1, double op2)
 		case '^':
 			return pow(op1,op2);
 		case '$':
+		case '%':
+			return (int)op1%(int)op2; 
 		default:
 			return 0;  
 	}
